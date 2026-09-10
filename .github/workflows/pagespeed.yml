@@ -1,0 +1,26 @@
+name: Generate Pagespeed Metrics
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 * * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  generate-metrics:
+    name: Generate metrics
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate PageSpeed card
+        uses: lowlighter/metrics@latest
+        with:
+          filename: .github/assets/pagespeed-metrics.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          committer_message: 'docs(readme): update pagespeed metrics [skip ci]'
+          base: ''
+          plugin_pagespeed: yes
+          plugin_pagespeed_detailed: yes
+          plugin_pagespeed_url: https://tg.toshiki.dev
+          plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
