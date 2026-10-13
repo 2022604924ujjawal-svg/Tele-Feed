@@ -74,7 +74,7 @@
     "prismjs-components-importer": "^0.2.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "sanitize-html": "^2.17.0",
+    "sanitize-html": "^2.18.0",
     "tailwind-merge": "^3.5.0",
     "tailwindcss-animate": "^1.0.7",
     "twemoji": "^14.0.2"
@@ -88,7 +88,7 @@
     "@types/prismjs": "^1.26.5",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
-    "@types/sanitize-html": "^2.16.1",
+    "@types/sanitize-html": "^2.16.2",
     "autoprefixer": "^10.4.23",
     "changelogen": "^0.6.1",
     "eslint": "^9.39.1",
